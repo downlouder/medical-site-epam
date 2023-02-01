@@ -118,7 +118,7 @@ nav a:hover {
 }
 .block-img:hover {
   border: 3px solid #0078aa;
-  background-color: transparent;
+  background-color: #fff;
 }
 .images svg:hover {
   fill: #0078aa;
@@ -326,9 +326,11 @@ form input {
   border: none;
   border-bottom: 1px solid #dbdbdb;
   width: 100%;
+  padding: 4px;
 }
 form input:focus {
   outline: none;
+  border-bottom: none;
 }
 form input::placeholder {
   font-size: 12px;
@@ -358,24 +360,69 @@ footer {
   }
   header {
     flex-direction: column;
+    padding-bottom: 12px;
   }
-  #tools {
+  nav {
+    gap: 8px;
+  }
+  nav a {
+    font-size: 16px;
+  }
+  #main-banner {
+    background-position-x: 33%;
+    height: 520px;
+    justify-content: center;
+  }
+  .text {
+    text-align: center;
+    margin-top: 92px;
+  }
+  .post-text {
+    font-weight: 500;
+    color: #727272;
+    font-size: 15px;
+  }
+  .post-text br {
+    display: none;
+  }
+  .images {
+    justify-content: space-evenly;
+  }
+  section#tools {
     flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 42px;
   }
   #tools img {
     width: 100%;
+  }
+  #about {
+    padding: 0 5%;
+    text-align: center;
   }
   #services {
     height: auto;
     background-repeat: repeat-y;
   }
-  .containers {
+  #services > h2 {
+    margin-top: 32px;
+  }
+  .service-containers {
     /* flex-direction: column; */
     flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 32px;
   }
   .service-container {
     width: 100%;
+    padding: 16px;
   }
+  .service-container h4 {
+    margin-bottom: 8px;
+  }
+
+
+
   #offers {
     height: auto;
   }
@@ -389,9 +436,24 @@ footer {
   }
   #form {
     flex-wrap: wrap;
+    padding: 0;
+  }
+  .wrapped-form {
+    padding: 0 5%;
+    text-align: center;
+    width: 100%;
   }
   #form img {
     width: 100%;
+  }
+  form {
+    padding: 0 12px;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
