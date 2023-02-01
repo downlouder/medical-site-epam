@@ -353,7 +353,46 @@ footer {
 
 /* MOBILE */
 @media screen and (max-width: 768px) {
-  
+  header, section, footer {
+    padding: 0 5%;
+  }
+  header {
+    flex-direction: column;
+  }
+  #tools {
+    flex-wrap: wrap;
+  }
+  #tools img {
+    width: 100%;
+  }
+  #services {
+    height: auto;
+    background-repeat: repeat-y;
+  }
+  .containers {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+  .service-container {
+    width: 100%;
+  }
+  #offers {
+    height: auto;
+  }
+  .offers-containers {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+  .offer-container, #main-container {
+    width: 100%;
+  }
+  #form {
+    flex-wrap: wrap;
+  }
+  #form img {
+    width: 100%;
+  }
 }
 
 /* TABLET */
